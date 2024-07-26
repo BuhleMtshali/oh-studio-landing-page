@@ -1,0 +1,10 @@
+:root {
+  --body-bg: #ffffff;
+  --nav-bg: #e8e5e480;
+  --font-color: #000000;
+  --grey-text: #7f7f7f;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
