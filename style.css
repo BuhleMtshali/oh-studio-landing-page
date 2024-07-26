@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
 }
 
-ul {
+.first-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -30,6 +30,24 @@ ul {
   font-size: 16px;
   line-height: 1.2em;
   cursor: pointer;
+}
+.second-list {
+  font-size: 14px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.second {
+  background-color: #f3f2f1;
+  border-radius: 22px;
+  padding: 8px 12px;
+  line-height: 1.2em;
+  margin: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.unactive {
+  background-color: var(--body-bg);
 }
 li {
   padding: 12px 35px;
