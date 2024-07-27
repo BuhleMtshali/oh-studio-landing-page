@@ -24,7 +24,7 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  background-color: #f3f2f1;
+  background-color: rgba(232, 229, 228, 0.5);
   align-content: center;
   align-items: center;
   width: 340px;
@@ -37,6 +37,7 @@ body {
   position: fixed;
   top: 5px;
   transform: translateX(-50%);
+  opacity: 1;
   left: 50%;
   z-index: 1;
 }
