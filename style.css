@@ -16,7 +16,10 @@ body {
   text-align: center;
   margin: 0 auto;
 }
-
+.grey-text {
+  color: var(--grey-text);
+  font-weight: bold;
+}
 .first-list {
   list-style-type: none;
   display: flex;
@@ -35,6 +38,7 @@ body {
   top: 5px;
   transform: translateX(-50%);
   left: 50%;
+  z-index: 1;
 }
 .second-list {
   font-size: 14px;
@@ -69,7 +73,8 @@ h1 {
   font-weight: 500;
   line-height: 1.2em;
   letter-spacing: -0.2;
-  padding-top: 170px;
+  padding-top: 200px;
+  padding-bottom: 40px;
 }
 
 .media-container {
@@ -89,4 +94,54 @@ video {
   object-position: center;
 
   border-radius: 10px;
+}
+.media {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.media img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+p {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--body-bg);
+}
+.arrow {
+  font-weight: 700;
+  background-color: var(--body-bg);
+  border-radius: 50%;
+  display: inline-block;
+  padding: 15px;
+  font-size: 18px;
+  color: var(--font-color);
+}
+.media:hover .overlay {
+  cursor: pointer;
+  opacity: 1;
+}
+.media:hover img {
+  filter: blur(8px);
+  opacity: 1;
+}
+.media:hover video {
+  filter: blur(8px);
+  opacity: 1;
 }
